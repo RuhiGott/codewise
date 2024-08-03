@@ -1,0 +1,22 @@
+.programs-header{
+    padding-top: 210px;;
+    padding-bottom: 120px;
+}
+
+.programs-lines {
+    margin-top: 26px;
+}
+
+.summer-camps {
+    display: flex;
+}
+
+.summer-camp-poster {
+    width: 300px;
+}
+
+.summer-camp-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

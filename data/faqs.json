@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What age group is suitable for coding classes?",
+        "answer": "There is no specific age group, but enrolling students ages 6 and above is ideal. If you would like to enroll a younger kid, we would suggest private classes so your child and their teacher can go at their own pace."
+    },
+    {
+        "question": "What programming languages are taught?",
+        "answer": "Currently, CodeWise offers Scratch, HTML, and Python classes. Although we only teach these languages at the moment, we may add more in the future."
+    },
+    {
+        "question": "Do kids need any prior coding experience?",
+        "answer": "Students will not require any prior experience for their classes! We teach beginner-friendly classes in all languages we offer."
+    },
+    {
+        "question": "How are classes structured?",
+        "answer": "CodeWise offers weekly classes for all languages. Our group classes are an hour per week and $30 per month. Our private classes are 30 minutes per week and $45 per month. We also offer summer camps, which are an hour per day for one/two weeks."
+    },
+    {
+        "question": "Are there any prerequisites for equipment or software?",
+        "answer": "Different languages may require certain things. For Scratch, you will need access to scratch.mit.edu, which is where we'll be coding. Python and HTML will sometimes require IDE software downloaded on your computer."
+    },
+    {
+        "question": "What is the student-to-teacher ratio?",
+        "answer": "Private classes will have a 1:1 student-to-teacher ratio. Group classes generally have 3-4 students per class."
+    }
+]

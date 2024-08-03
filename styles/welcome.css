@@ -1,0 +1,30 @@
+.welcome {
+    background-color: #E5F1FF;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.welcome-icon {
+    height: 67px;
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+#welcome-para {
+    width: 400px;
+}
+
+@media (max-width: 480px) {
+    #welcome-para {
+        width: 280px;
+        margin-top: 10px;
+    }
+
+    .welcome {
+        background-color: #E5F1FF;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+}

@@ -1,0 +1,19 @@
+.primary-section, .secondary-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primary-section {
+    padding-top: 130px;
+}
+
+.secondary-section {
+    padding-top: 56px;
+}
+
+@media (max-width: 480px) {
+    .primary-section {
+        padding-top: 115px;
+    }
+}

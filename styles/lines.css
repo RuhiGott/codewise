@@ -1,0 +1,34 @@
+.lines {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.line {
+    height: 6px;
+    border-radius: 100px;
+}
+
+.edge-line {
+    width: 45px;
+}
+
+.middle-line {
+    width: 17px;
+}
+
+.light-blue-line {
+    background-color: #E5F1FF;
+}
+
+.yellow-line {
+    background-color: #FFBC39;
+}
+
+.dark-blue-line {
+    background-color: #2C63B6;
+}
+
+.section-lines {
+    margin-top: 18px;
+}

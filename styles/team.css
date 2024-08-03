@@ -1,0 +1,53 @@
+.team-flex {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    justify-content: center;
+    column-gap: 50px;
+    width: 490px;
+    margin-top: 40px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    transition: transform 0.15s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+}
+
+.team-member-picture {
+    width: 130px;
+    height: 150px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 7px;
+}
+
+.team-member-line {
+    width: 50px;
+    height: 5px;
+    border-radius: 30px;;
+}
+
+.team-member-name {
+    margin-top: 4px;
+    width: 130px;
+}
+
+@media (max-width: 550px) {
+    .team-flex {
+        width: 310px;
+    }
+}
+
+@media (max-width: 360px) {
+    .team-flex {
+        width: 290px;
+        column-gap: 30px;
+    }
+}
