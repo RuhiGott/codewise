@@ -1,11 +1,14 @@
 
-#about-header {
-    background-color: #E5F1FF;
-    flex-direction: row;
+.about-header {
+    padding-bottom: 66px;
+}
+
+.about-flex {
+    display: flex;
+    gap: 14%;
     justify-content: center;
     align-items: center;
-    gap: 9%;
-    padding-bottom: 66px;
+    max-width: 940px;
 }
 
 .about-title, .about-p {
@@ -31,13 +34,13 @@
 }
 
 
-@media (max-width: 1000px) {
-    #about-header {
+@media (max-width: 1020px) {
+    .about-flex {
         gap: 7%;
     }
 } 
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     .about-p {
         width: 294px;
         font-size: 15px;
@@ -51,10 +54,14 @@
     .about-title {
         font-size: 37px;
     }
+
+    .about-flex {
+        gap: 15%;
+    }
 }
 
-@media (max-width: 600px) {
-    #about-header {
+@media (max-width: 667px) {
+    .about-flex {
         flex-direction: column;
         gap: 35px;
     }
@@ -73,7 +80,6 @@
 
 @media (max-width: 480px) {
     .about-p {
-        text-align: center;
         width: 280px;
     }
 
