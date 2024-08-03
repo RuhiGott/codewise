@@ -46,7 +46,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     .team-flex {
         width: 290px;
         column-gap: 30px;
