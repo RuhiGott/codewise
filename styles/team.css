@@ -37,6 +37,7 @@
 .team-member-name {
     margin-top: 4px;
     width: 130px;
+    text-align: center;
 }
 
 @media (max-width: 550px) {
