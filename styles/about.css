@@ -27,12 +27,13 @@
 }
 
 .about-img {
-    width: 280px;
-    height: 280px;
-    border: #FFBC39 4px solid;
-    border-radius: 800px;
+    width: 310px;
+    height: 310px;
 }
 
+.about-rel {
+    position: relative;
+}
 
 @media (max-width: 1020px) {
     .about-flex {
@@ -47,8 +48,8 @@
     }
 
     .about-img {
-        width: 190px;
-        height: 190px;
+        width: 220px;
+        height: 220px;
     }
 
     .about-title {
@@ -60,7 +61,7 @@
     }
 }
 
-@media (max-width: 667px) {
+@media (max-width: 660px) {
     .about-flex {
         flex-direction: column;
         gap: 35px;
