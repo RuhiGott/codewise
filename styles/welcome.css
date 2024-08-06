@@ -1,14 +1,14 @@
 .welcome {
     background-color: #E5F1FF;
     padding-top: 35px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
 }
 
 .welcome-icon {
     height: 67px;
     display: block;
     margin: auto;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 #welcome-para {
