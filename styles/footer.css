@@ -9,6 +9,10 @@
     align-items: center;
 }
 
+.no-margin-footer {
+    margin: 0;
+}
+
 .footer-logo, .footer-email, .copyright {
     color: white;
 }
@@ -34,10 +38,4 @@
 .copyright {
     font-size: 15px;
     margin-top: 15px;
-}
-
-@media (max-width: 480px) {
-    .footer {
-        margin-top: 45px;
-    }
 }

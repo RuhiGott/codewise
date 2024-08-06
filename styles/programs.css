@@ -1,17 +1,104 @@
-.programs-lines {
-    margin-top: 26px;
-}
-
-.summer-camps {
+#program-flex {
+    background-color: #E5F1FF;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 70px;
+
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
-.summer-camp-poster {
-    width: 300px;
+.program-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    margin-top: 58px;
 }
 
-.summer-camp-text {
+.program-lines {
+    margin-top: 10px;
+}
+
+.program-poster {
+    width: 400px;
+}
+
+.program-right {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -10px;
+}
+
+.program-text{
+    text-align: left;
+    width: 270px;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.program-title {
+    font-size: 44px;
+    width: 200px
+}
+
+@media (max-width: 880px) {
+    #program-flex {
+        gap: 38px;
+    }
+
+    .program-sections {
+        gap: 35px;
+    }
+
+    .program-poster {
+        width: 260px;
+    }
+
+    .program-title {
+        font-size: 34px;
+    }
+
+    .program-text {
+        margin-top: 22px;
+        font-size: 14px;
+
+        width: 235px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .program-lines {
+        margin-top: 16px;;
+    }
+    
+    #program-flex {
+        flex-direction: column-reverse;
+        padding-bottom: 50px;
+    padding-top: 65px;
+
+    gap: 48px;
+    }
+
+    .program-text {
+        text-align: center;
+        width: 360px;
+
+        margin-bottom: 25px;
+    }
+
+    .program-title {
+        width: 300px
+    }
+}
+
+@media (max-width:480px) {
+    .program-text {
+        width: 75%;
+    }
 }
