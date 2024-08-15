@@ -1,1 +1,22 @@
-
+[
+    {
+        "name": "About",
+        "link": "./about"
+    },
+    {
+        "name": "Programs",
+        "link": "./programs"
+    },
+    {
+        "name": "Testimonials",
+        "link": "./testimonials"
+    },
+    {
+        "name": "FAQ",
+        "link": "./faq"
+    },
+    {
+        "name": "Register",
+        "link": "./register"
+    }
+]
