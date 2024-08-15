@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 teamMemberText.textContent = teacher.teacher;
 
                 const teamMemberInfo = document.createElement('p');
-                teamMemberText.textContent = teacher.info;
+                teamMemberInfo.textContent = teacher.info;
 
                 const teamMemberLine = document.createElement('div');
                 teamMemberLine.classList.add('team-member-line');
@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 teamMember.appendChild(teamMemberPicture);
                 teamMember.appendChild(teamMemberText);
+                teamMember.appendChild(teamMemberInfo);
                 teamMember.appendChild(teamMemberLine);
 
                 teamContainer.appendChild(teamMember);
