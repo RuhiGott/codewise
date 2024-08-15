@@ -1,12 +1,12 @@
 [
     {
-        "img": "../images/posters/students-poster.png",
+        "img": "images/posters/students-poster.png",
         "title": "Weekly Classes!",
         "text": "Unlock your coding potential with our weekly coding classes!...",
         "link": "https://forms.office.com/pages/responsepage.aspx?id=-iqXnryIwU2n5mw8ofk-0GjAS5ftKKZBqTUXD8cfaEBUNjIyN0tNVTAyNVdGSzBYQzdJS1FTRzlINS4u"
     },
     {
-        "img": "../images/posters/summer-camp.png",
+        "img": "images/posters/summer-camp.png",
         "title": "Summer Camp 2024!",
         "text": "Ignite your child's passion for technology at our CodeWise Summer Camp!...",
         "link": "https://forms.office.com/pages/responsepage.aspx?id=-iqXnryIwU2n5mw8ofk-0GjAS5ftKKZBqTUXD8cfaEBUMzY3V0laRjBDNVFZMVhOS1U5WVBXSzJMSy4u"
