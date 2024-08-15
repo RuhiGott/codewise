@@ -1,20 +1,26 @@
 [
     {
-        "teacher": "Shaina Gupta"
+        "teacher": "Shaina Gupta",
+        "info": test
     },
     {
-        "teacher": "Kay Selvasingh"
+        "teacher": "Kay Selvasingh",
+        "info": test
     },
     {
-        "teacher": "Manaswini Madhu"
+        "teacher": "Manaswini Madhu",
+        "info": test
     },
     {
-        "teacher": "Bryan Zhang"
+        "teacher": "Bryan Zhang",
+        "info": test
     },
     {
-        "teacher": "Atreya Naik"
+        "teacher": "Atreya Naik",
+        "info": test
     },
     {
-        "teacher": "Rijul Bhandari"
+        "teacher": "Rijul Bhandari",
+        "info": test
     }
 ]
