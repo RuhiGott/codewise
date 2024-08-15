@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 teamMemberText.classList.add("team-member-name");
                 teamMemberText.textContent = teacher.teacher;
 
+                const teamMemberInfo = document.createElement('p');
+                teamMemberText.textContent = teacher.info;
+
                 const teamMemberLine = document.createElement('div');
                 teamMemberLine.classList.add('team-member-line');
 
