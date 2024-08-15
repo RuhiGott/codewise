@@ -21,6 +21,10 @@
     transform: translateY(-8px);
 }
 
+.team-member-info {
+    margin: 0;
+}
+
 .team-member-picture {
     width: 130px;
     height: 150px;
