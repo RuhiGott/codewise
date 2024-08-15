@@ -2,47 +2,74 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('data/programs.json')
         .then(response => response.json())
         .then(data => {
-            const faqsContainer = document.getElementById('faqs');
-            data.forEach((faq, index) => {
-                const faqElement = document.createElement('div');
-                faqElement.classList.add('faq');
+            const programsContainer = document.querySelector('.program-sections');
 
-                const faqButton = document.createElement('div');
-                faqButton.classList.add('faq-button');
+            data.forEach((program, index) => {
+                // Create the outer program div
+                const programFlex = document.createElement('div');
+                programFlex.classList.add('program-flex');
 
-                const vLine = document.createElement('div');
-                vLine.classList.add('v-line');
-                const hLine = document.createElement('div');
-                hLine.classList.add('h-line');
+                // Set the ID dynamically based on title
+                programFlex.id = program.title.toLowerCase().replace(/\s+/g, '-'); // e.g. "weekly-classes"
 
-                const isEven = index % 2 === 0;
-                vLine.classList.add(isEven ? 'dark-blue-line' : 'yellow-line');
-                hLine.classList.add(isEven ? 'dark-blue-line' : 'yellow-line');
+                // Create the img element
+                const programImage = document.createElement('img');
+                programImage.src = program.img;
+                programImage.classList.add('program-poster');
 
-                faqButton.appendChild(vLine);
-                faqButton.appendChild(hLine);
+                // Create the right div
+                const programRight = document.createElement('div');
+                programRight.classList.add('program-right');
 
-                const questionElement = document.createElement('h2');
-                questionElement.classList.add('question');
-                questionElement.textContent = faq.question;
+                // Create the title element
+                const programTitle = document.createElement('h2');
+                programTitle.classList.add('program-title');
+                programTitle.textContent = program.title;
 
-                const answerElement = document.createElement('p');
-                answerElement.classList.add('answer');
-                answerElement.innerHTML = faq.answer;
+                // Create the lines container
+                const linesDiv = document.createElement('div');
+                linesDiv.classList.add('lines', 'program-lines');
 
-                faqElement.appendChild(faqButton);
-                faqElement.appendChild(questionElement);
-                faqElement.appendChild(answerElement);
+                // Create the three lines
+                const edgeLine1 = document.createElement('div');
+                edgeLine1.classList.add('line', 'edge-line', 'yellow-line');
 
-                faqsContainer.appendChild(faqElement);
-            });
+                const middleLine = document.createElement('div');
+                middleLine.classList.add('line', 'middle-line', 'yellow-line');
 
-            const faqElements = document.querySelectorAll(".faq");
-            faqElements.forEach(faq => {
-                faq.addEventListener("click", () => {
-                    faq.classList.toggle("active");
-                });
+                const edgeLine2 = document.createElement('div');
+                edgeLine2.classList.add('line', 'edge-line', 'yellow-line');
+
+                // Append lines to the lines div
+                linesDiv.appendChild(edgeLine1);
+                linesDiv.appendChild(middleLine);
+                linesDiv.appendChild(edgeLine2);
+
+                // Create the text element
+                const programText = document.createElement('p');
+                programText.classList.add('program-text');
+                programText.textContent = program.text;
+
+                // Create the registration button with dynamic link
+                const registerButton = document.createElement('a');
+                registerButton.classList.add('box-button');
+                registerButton.target = "_blank";
+                registerButton.href = program.link; // Dynamic link from JSON
+                registerButton.textContent = "Register!";
+
+                // Append elements to the right div
+                programRight.appendChild(programTitle);
+                programRight.appendChild(linesDiv);
+                programRight.appendChild(programText);
+                programRight.appendChild(registerButton);
+
+                // Append the image and right div to the program flex div
+                programFlex.appendChild(programImage);
+                programFlex.appendChild(programRight);
+
+                // Append the program flex div to the container
+                programsContainer.appendChild(programFlex);
             });
         })
-        .catch(error => console.error('Error fetching FAQs:', error));
+        .catch(error => console.error('Error fetching programs:', error));
 });
