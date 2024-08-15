@@ -14,9 +14,5 @@
     {
         "name": "FAQ",
         "link": "./faq"
-    },
-    {
-        "name": "Register",
-        "link": "./register"
     }
 ]
