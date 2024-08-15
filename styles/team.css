@@ -31,7 +31,8 @@
 .team-member-line {
     width: 50px;
     height: 5px;
-    border-radius: 30px;;
+    border-radius: 30px;
+    margin-top: 10px;
 }
 
 .team-member-name {
