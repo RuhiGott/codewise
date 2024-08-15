@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 const teamMember = document.createElement('div');
                 teamMember.classList.add('team-member');
 
-                const teamMemberPicture = document.createElement('div');
+                const teamMemberPicture = document.createElement('img');
+                teamMemberPicture.src = teacher.img
                 teamMemberPicture.classList.add('team-member-picture');
 
                 const teamMemberText = document.createElement('p');
