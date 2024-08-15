@@ -9,9 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 const programFlex = document.createElement('div');
                 programFlex.classList.add('program-flex');
 
-                // Set the ID dynamically based on title
-                programFlex.id = program.title.toLowerCase().replace(/\s+/g, '-'); // e.g. "weekly-classes"
-
                 // Create the img element
                 const programImage = document.createElement('img');
                 programImage.src = program.img;
